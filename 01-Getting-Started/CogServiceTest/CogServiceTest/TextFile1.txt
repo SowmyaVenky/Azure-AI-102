@@ -1,0 +1,8 @@
+﻿#login to azure
+az login
+
+#get the type of cognitive services available.
+az cognitiveservices account list-kinds
+
+#Create a text analytics type service to use for simple testing.
+az cognitiveservices account create --name venkytestan1001 --resource-group 1-c6f73a86-playground-sandbox  --kind TextAnalytics --sku S0 --location westus2 --yes
